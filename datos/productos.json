@@ -1,0 +1,52 @@
+{
+    "PROD01": {
+        "nombre": "Cajas de Clavos 2 pulgadas",
+        "precio": 15.5,
+        "cantidad": 50
+    },
+    "PROD02": {
+        "nombre": "Martillo de Carpintero Pro",
+        "precio": 42.0,
+        "cantidad": 12
+    },
+    "PROD03": {
+        "nombre": "Cinta Métrica 5m Heavy Duty",
+        "precio": 8.5,
+        "cantidad": 100
+    },
+    "PROD04": {
+        "nombre": "Taladro Inalámbrico 20V",
+        "precio": 289.9,
+        "cantidad": 4
+    },
+    "PROD05": {
+        "nombre": "Juego de Destornilladores x6",
+        "precio": 34.5,
+        "cantidad": 32
+    },
+    "PROD06": {
+        "nombre": "Alicate de Presión 10 pulgadas",
+        "precio": 28.0,
+        "cantidad": 3
+    },
+    "PROD07": {
+        "nombre": "Cinta Aislante Negra 20m",
+        "precio": 4.2,
+        "cantidad": 150
+    },
+    "PROD08": {
+        "nombre": "Espuma Expansiva Poliuretano",
+        "precio": 19.9,
+        "cantidad": 13
+    },
+    "PROD09": {
+        "nombre": "Casco de Seguridad Amarillo",
+        "precio": 14.0,
+        "cantidad": 26
+    },
+    "PROD10": {
+        "nombre": "Amoladora Angular 4.5 pulg",
+        "precio": 145.0,
+        "cantidad": 15
+    }
+}
