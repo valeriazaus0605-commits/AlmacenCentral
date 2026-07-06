@@ -45,7 +45,8 @@ def submenu_pedidos():
         print("2. Buscar datos de un cliente")
         print("3. Registrar una nueva orden de compra (Pedido)")
         print("4. Buscar orden por código ID")
-        print("5. Volver al menú principal")
+        print("5. 🧾 Generar Boleta de Venta (Nueva Opción)")  # <-- Agregado
+        print("6. Volver al menú principal")  # <-- Cambiado a opción 6
         
         opc = input("Seleccione una opción: ").strip()
         if opc == "1":
@@ -65,7 +66,6 @@ def submenu_pedidos():
             input("\nPresione Enter para continuar...")
         elif opc == "3":
             dni = input("DNI/RUC del cliente comprador: ").strip()
-            # Muestra el inventario con tus productos de ferretería
             stock.ver_inventario()
             lista_compra = []
             while True:
@@ -97,7 +97,14 @@ def submenu_pedidos():
             else:
                 print("\n[!] Pedido no encontrado.")
             input("\nPresione Enter para continuar...")
-        elif opc == "5":
+        elif opc == "5":  # ===================================================
+            # LOGÍSTICA PARA LA NUEVA FUNCIÓN DE BOLETAS
+            # =================================================================
+            id_p = input("Ingrese el ID del pedido para facturar boleta: ").strip().upper()
+            boleta_impresa = pedidos.generar_boleta_venta(id_p)
+            print(boleta_impresa)  # Imprime el diseño visual directo en consola
+            input("\nPresione Enter para continuar...")
+        elif opc == "6":  # Cambiado a 6 para salir de este submenú
             break
 
 def submenu_stock():
@@ -163,7 +170,6 @@ def submenu_reportes():
         
         opc = input("Seleccione una opción: ").strip()
         if opc == "1":
-            # Llamada directa corregida para evitar el error original
             reportes.obtener_alertas_reabastecimiento()
             input("\nPresione Enter para continuar...")
         elif opc == "2":
